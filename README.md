@@ -1,36 +1,35 @@
-# Generative AI Learning Repository
+# Agentic AI Learning Repository
 
-This repository contains my learning materials, practice implementations, and experiments while studying **Generative AI (GenAI)** and modern **Large Language Model (LLM)** development.
+This repository contains my hands-on learning, experiments, and implementations while studying **Agentic AI** and modern **LLM-based application development**.
 
 ## Contents
 
-* Foundations of AI and Generative AI
-* Prompt Engineering techniques
-* Working with LLM APIs
-* LangChain basics and applications
-* Retrieval Augmented Generation (RAG)
-* Vector databases and embeddings
-* Agentic AI concepts and frameworks
-* Multi-agent and agentic application development
-* Capstone GenAI project implementations
+* Working with OpenAI SDK and Groq API
+* System Prompt and User Prompt design
+* Chunking and parsing techniques for large inputs
+* Structured output generation using Pydantic (BaseModel)
+* Building chatbot applications
+* Memory-enabled conversational agents (session-based memory)
+* Business data extraction using LLM pipelines
+* Foundations for Agentic AI workflows and applications
 
 ## Purpose
 
-The repository is used to:
+This repository is used to:
 
-* Practice GenAI concepts through hands-on coding
-* Build LLM-based applications
-* Experiment with AI agents and RAG pipelines
-* Track learning progress and project development
+* Practice Agentic AI concepts through implementation
+* Build intelligent agents capable of reasoning and structured output
+* Experiment with memory, prompts, and data extraction pipelines
+* Track progress while learning Agentic AI development
 
 ## Tech Stack
 
 * Python
+* OpenAI SDK
+* Groq API
+* Pydantic
 * LLM APIs
-* LangChain
-* Vector Databases
-* FastAPI / Streamlit
 
 ## Status
 
-Active learning and experimentation in Generative AI.
+Active learning and experimentation in Agentic AI development.
