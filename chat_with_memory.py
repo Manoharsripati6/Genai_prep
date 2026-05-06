@@ -10,7 +10,7 @@ client=OpenAI(
 
 def chat_with_memory():
     messages=[
-        {"role":"system","content":"Answer in 2-3 lines. you are a PHD expert"}
+        {"role":"system","content":"Answer in 2-3 lines.You are a PHD expert"}
     ]
     while True:
         print("\npress exit if you want to exit")

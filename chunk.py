@@ -10,8 +10,8 @@ print("text")
 response=client.chat.completions.create(
     model="meta-llama/llama-4-scout-17b-16e-instruct",
     messages=[
-        {"role": "system", "content": "You are a PHD researcher. give me answer in briefpoints."},
-        {"role": "user", "content": "i wanna learn about genAi? give 5 points how i can learn genAi?"}
+        {"role": "system", "content": "You are a PHD researcher.give me answer in briefpoints."},
+        {"role": "user", "content": "i wanna learn about agenticAi? give 5 points how i can learn genAi?"}
     ]
     ,temperature=0.5,
     max_tokens=200,

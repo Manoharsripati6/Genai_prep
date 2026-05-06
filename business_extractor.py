@@ -13,10 +13,10 @@ class BusinessModel(BaseModel):
     revenue:Optional[int]=None
     employee_count:Optional[int]=None
     established_year:Optional[int]=None
-def extract(inp:str)->BusinessModel:
+def extract(userinp:str)->BusinessModel:
     msg=[{
-        "role":"system","content":"you are a business analyst expert. extract the company name , revenue, established year and employee count if mentioned from the given text and give answer in json format with keys name, company_name and revenue. if anything is missing use your knowledge to fill the data. if still you are not able to find the data fill it with null"
-    },{"role":"user", "content": inp}]
+        "role":"system","content":"you are a business analyst expert. extract the company name,revenue, established year and employee count if mentioned from the given text and give answer in json format with keys name, company_name and revenue. if anything is missing use your knowledge to fill the data. if still you are not able to find the data fill it with null"
+    },{"role":"user", "content": userinp}]
     responses=client.chat.completions.parse(
             model="meta-llama/llama-4-scout-17b-16e-instruct",
             messages=msg,
