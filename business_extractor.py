@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from typing import Optional 
 from openai import OpenAI
 client=OpenAI(
-    api_key=os.getenv("GROQ_API"),
+    api_key=os.getenv("GROQ_API_KEY"),
     base_url="https://api.groq.com/openai/v1",
 )
 class BusinessModel(BaseModel):
