@@ -1,14 +1,15 @@
 import os
-import time
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 load_dotenv()
 
+
+#just using llm and prompt 
 llm=ChatGroq(
-    model="meta-llama/llama-4-scout-17b-16e-instruct",
-    temperature=0.5,
+    model="meta-llama/llama-4-scout-17b-16e-instruct"
+    ,temperature=0.5,
     max_tokens=4000,
     max_retries=3,
 )
@@ -17,13 +18,10 @@ prompt=ChatPromptTemplate.from_messages([
     ,{"role": "user", "content": "{question}"}
 ])
 
+llm=prompt | llm  
+print(llm.invoke({"question":"why is a black hole black?"}))
+
+# using output parser to get response in string format
 llm=prompt | llm | StrOutputParser()
-
 response=llm.invoke({"question":"what is black hole?"})
-
-for i in response.split("\n"):
-    for j in range(len(i)):
-        print(i[j], end="", flush=True)
-        time.sleep(0.025)
-    print("\n")
-    
+print(response)
