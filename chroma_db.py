@@ -57,7 +57,7 @@ vector_store = Chroma.from_documents(
 test_query = "can I use Python?"
 #filtering by metadata
 results = vector_store.similarity_search(
-    query="Do i get paid for sick leaves?",
+    query=test_query,
     filter={"department": "development"},
     k=2
 )
