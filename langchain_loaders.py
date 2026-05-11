@@ -1,5 +1,4 @@
 from langchain_community.document_loaders import PyPDFLoader,Docx2txtLoader,TextLoader
-
 #pdf loader
 loader = PyPDFLoader("sample.pdf")
 pages = loader.load_and_split()
