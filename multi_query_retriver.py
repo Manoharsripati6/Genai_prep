@@ -7,7 +7,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 
 from langchain_chroma import Chroma
-from langchain.retrievers import MultiQueryRetriever
+from langchain_classic.retrievers import MultiQueryRetriever
 import chromadb
 
 
@@ -24,14 +24,14 @@ embeddings = HuggingFaceEmbeddings(
 )
 
 client = chromadb.PersistentClient(
-    path="./chroma_db_rules"
+    path="data/vector_store_rag"
 )
 
 vectorstore = Chroma(
 
     client=client,
 
-    collection_name="langchain",
+    collection_name="my_collection",
 
     embedding_function=embeddings
 )
