@@ -1,191 +1,137 @@
-# 🤖 Agentic AI Learning Journey
+🚀 Agentic AI Learning Journey — GenAI Prep
+
+This repository documents my hands-on journey into Generative AI and Agentic AI Systems.
+
+The goal of this repo is not tutorials, but practical engineering experiments focused on building real AI agents using:
+
+🧠 LangChain
+⚡ LCEL (LangChain Expression Language)
+🔍 Retrieval Augmented Generation (RAG)
+🗄️ Vector Databases (ChromaDB)
+🤖 Llama-3 via Groq
+🧩 Memory-aware AI systems
+🎯 Objective
+
+Move beyond simple prompt-based chatbots and develop true AI systems capable of:
+
+Structured reasoning
+Long-term conversational memory
+Retrieval-based intelligence
+Multi-step agent workflows
+Parallel reasoning pipelines
+Advanced document understanding
+
+This repository represents my daily GenAI preparation and experimentation.
+
+🧠 Technologies Used
+Python
+LangChain
+LCEL
+Groq API
+Llama-3
+HuggingFace Embeddings
+Chroma Vector Database
+RAG Architectures
+📂 Repository Structure
+🔹 Core Agentic AI Experiments
+File	Description
+lang.py	Basic LangChain experimentation
+lcel.py	LCEL workflow implementation
+chat_with_memory.py	Conversational AI with persistent memory
+langchain_memory.py	Memory system experiments
+langchain_sequence.py	Sequential chain workflows
+langchain_parallel.py	Parallel reasoning chains
+langchain_prompts.py	Prompt engineering experiments
+langchain_parsers.py	Structured output parsing
+🔹 Document Loading & Chunking
+File	Description
+langchain_loaders.py	Document loading pipelines
+chunk.py	Manual text chunking
+langchain_chunking.py	LangChain-based chunk strategies
+🔹 Vector Database & Embeddings
+File	Description
+chroma_db.py	ChromaDB setup & persistence
+multi_query_retriver.py	Multi-query retrieval optimization
+parent_child.py	Parent–Child document retriever
+🔹 Retrieval Augmented Generation (RAG)
+File	Description
+naiveRAG.py	Basic RAG pipeline
+convoRAG.py	Conversational RAG system
+hyde.py	HYDE retrieval technique implementation
+🔹 Utility Experiments
+File	Description
+business_extractor.py	Structured information extraction
+api_check.py	API validation & testing scripts
+📁 data/
+
+Contains documents used for embedding and retrieval experiments.
+
+🧩 Concepts Implemented
+✅ Agentic AI Foundations
+LangChain Architecture
+LCEL pipelines
+Structured Output Parsing
+Prompt Engineering
+Model Integration using Groq + Llama-3
+✅ Memory Systems
+
+Implemented multiple conversational memory strategies:
+
+Conversation Buffer Memory
+Summary Memory
+Window Memory
+Context Preservation Techniques
+✅ Retrieval Augmented Generation
+
+Built multiple RAG architectures:
+
+Naive RAG
+Conversational RAG
+Multi-Query Retrieval
+HYDE (Hypothetical Document Embeddings)
+Parent-Child Retrieval
+✅ Advanced Agent Reasoning
+Sequential Chains
+Parallel Chains
+Modular AI Workflows
+Retrieval + Memory Integration
+🏗️ Learning Philosophy
+
+Instead of copying tutorials, this repo focuses on:
+
+✅ Building from scratch
+✅ Understanding internal mechanics
+✅ Experiment-driven learning
+✅ Production-oriented AI thinking
 
-This repository documents my hands-on journey into building **Agentic AI Systems** using **LangChain**, **LCEL**, and **Llama-3**.
+📈 Progress Vision
 
-The objective is to move beyond traditional prompt-based chatbots and design AI systems capable of:
+This repository is evolving toward:
 
-- Structured reasoning
-- Memory retention
-- Multi-chain workflows
-- Parallel decision analysis
-- Automated documentation
+Autonomous AI Agents
+Multi-Agent Systems
+Tool-using Agents
+Production RAG Architectures
+Agentic AI Applications
+🚀 How to Run
+git clone https://github.com/Manoharsripati6/Genai_prep.git
+cd Genai_prep
+pip install -r requirements.txt
 
-This repo represents my daily **Agentic AI preparation** through practical implementations.
+Create .env file:
 
----
+GROQ_API_KEY=your_api_key_here
 
-# 🚀 Agentic AI Progress
+Run any experiment:
 
----
+python naiveRAG.py
+👨‍💻 Author
 
-## 🧠 Day 1 — Agentic AI Foundations
+Manohar Sripati
+B.Tech Student | Agentic AI Learner | Machine Learning Enthusiast
 
-### Concepts Learned
-- LangChain Architecture
-- LCEL (LangChain Expression Language)
-- Output Parsers
-- Structured LLM Responses
-- Groq + Llama-3 Integration
+Building toward next-generation AI systems.
 
----
+⭐ If you like this repository
 
-### 🔹 Hawking-Style AI Terminal
-
-Built an AI system where the **Llama-3 model behaves like Stephen Hawking** and explains black holes directly inside the terminal.
-
-**Goal**
-- Transform CLI into an intelligent conversational physicist.
-
-**Outcome**
-- Personality-driven responses
-- Contextual explanations
-- Terminal-based AI interaction
-
----
-
-### 🔹 JSON Country Information Extractor
-
-Created a structured parser that extracts country information from raw LLM responses.
-
-Example Output:
-capital: New Delhi
-population: 1380004385
-gender_ratio: 1.04
-literacy_rate: 77.7
-
-
-
-**Learning**
-LLMs become powerful when outputs are structured instead of plain text.
-
----
-
-## 🧠 Day 2 — Agent Reasoning & Memory Systems
-
-Focused on building AI systems that **reason step-by-step** and **analyze problems from multiple perspectives**.
-
-### Concepts Learned
-- Sequential Parsing
-- Parallel Parsing
-- Conversation Memory Systems
-
-Implemented:
-
-- ConversationBufferMemory
-- ConversationSummaryMemory
-- ConversationBufferWindowMemory
-
-These memory types allow agents to retain conversational context efficiently.
-
----
-
-# 💡 Projects Built
-
----
-
-## 🔹 Sequential Business Model Analyser
-
-**Business Idea Used:** Watch Customization Business ⌚
-
-Designed a multi-chain reasoning pipeline:
-
-### Chain Workflow
-1. **Chain 1 — Business Analysis**
-   - Market overview
-   - Target audience
-   - Revenue model
-
-2. **Chain 2 — Pain Point Generator**
-   - Identifies risks and operational challenges
-   - Uses Chain 1 output as reasoning input
-
-3. **Chain 3 — Final Strategic Summary**
-   - Produces a concise business evaluation
-
-✅ Demonstrates progressive AI reasoning.
-
----
-
-## 🔹 Parallel Business View Analyser
-
-Built a parallel agent system analyzing the same business idea from different perspectives simultaneously.
-
-### Parallel Workflow
-1. **Chain 1 — Optimistic View**
-   - Growth opportunities
-   - Market potential
-
-2. **Chain 2 — Non-Optimistic View**
-   - Risks
-   - Constraints
-   - Failure scenarios
-
-3. **Chain 3 — Combined Summary**
-   - Merges both viewpoints into a balanced conclusion
-
-✅ Simulates an **AI decision-making committee**.
-
----
-
-## 📄 Output Automation
-
-Both analysers automatically:
-
-- Save responses into `.md` files
-- Maintain reproducible experiment results
-- Enable structured AI workflow documentation
-
----
-
-# ⚙️ Tech Stack
-
-- Python
-- LangChain
-- LCEL
-- Groq API
-- Llama-3
-- Prompt Engineering
-- Output Parsing
-- Agent Memory Systems
-
----
-
----
-
-# 🧩 Key Learning
-
-Agentic AI is not about better prompts.
-
-It is about:
-
-- Orchestrating intelligence
-- Designing reasoning pipelines
-- Managing conversational memory
-- Enabling parallel thinking
-- Automating decision workflows
-
-Transitioning from:
-
-**Prompt Engineering → AI System Engineering**
-
----
-
-# 🚧 Future Goals
-
-- Tool Calling Agents
-- Multi-Agent Collaboration
-- Autonomous AI Systems
-- RAG + Agents
-- Production AI Deployment
-
----
-
-# 👨‍💻 Author
-
-**Manohar Sripati**  
-B.Tech Student | BS Data Science @ IIT Madras  
-Machine Learning & Agentic AI Enthusiast
-
----
-
-⭐ Star this repository if you find it interesting!
+Consider giving it a ⭐ — it motivates continued open learning and sharing.
